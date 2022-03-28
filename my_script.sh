@@ -83,7 +83,7 @@ for(jobs in list_Jobs) {
         maven {
             rootPOM 'home-task/pom.xml'
   		              	goals 'clean package'
-            mavenInstallation('maven3')
+            mavenInstallation('Maven 385')
         }
       	shell('echo $BRANCH_NAME') 
         shell('java -cp home-task/target/ci-training-1.0.jar com.test.Project > output.log')
