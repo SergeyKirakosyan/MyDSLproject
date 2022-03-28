@@ -82,7 +82,7 @@ for(jobs in list_Jobs) {
     steps {
         maven {
             rootPOM 'home-task/pom.xml'
-  		              	goals 'clean install'
+  		              	goals 'clean package'
             mavenInstallation('maven3')
         }
       	shell('echo $BRANCH_NAME') 
